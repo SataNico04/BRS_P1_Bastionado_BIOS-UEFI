@@ -114,4 +114,17 @@ Lo activamos también.
 
 ## Startup
 
-En esta pestaña podremos configurar el inicio del sistema.
+En esta pestaña podremos configurar el inicio del sistema. 
+
+### Boot
+En la primera opción, podemos cambiar el orden de arranque, y lo más seguro es dejar solo habilitado la opción de windows. Para ello podemos usar los atajos de la derecha.
+
+![BOOT](boot.png)
+
+### Boot order lock
+Una vez cambiado el orden de arranque de nuestro sistema, tendremos que bloquearlo.
+
+## Restart
+Lo último que nos quedaría es guardar los cambios y salir de la BIOS.
+
+De esta forma, ya habremos bastionado correctamente nuestra BIOS y podremos pasar a la siguiente parte de la práctica.
