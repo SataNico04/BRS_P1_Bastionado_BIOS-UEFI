@@ -24,7 +24,7 @@ En la parte central, podremos ver información u opcciones a configurar, en este
 
 Y en la parte inferior, tenemos los atajos de teclado que podremos usar en cada momento con su descripción.
 
-## Configuración
+## Config
 
 Una vez visto lo *principal* de la BIOS, vamos a pasar ahora a la configuración en busca de hacerla más segura.
 Avancemos de pestaña y vallamonos a la de configuración:
@@ -48,3 +48,70 @@ En esta sección, deberemos deshabilitar la opcción de iniciar desde USB:
 ![USB](usb.png)
 
 De esta forma, evitaremos que puedan iniciar un sistema operativo desde un dispositivo externo y sacar o ver información de nuestro sistema.
+
+El resto podemos dejarlo por defecto.
+
+## Date/Time
+
+En esta pestaña no encontramos nada que comprometa la seguridad de nuestro sistema.
+
+## Security
+
+Podríamos decir que esta es la pestaña más importante en cuanto a seguridad se refiere. Podemos cambiar bastantes cosas aquí.
+
+### Password
+
+Al acceder a este apartado, veremos lo siguiente:
+
+![CONTRASEÑAS](contraseñas.png)
+
+Vamos a comentar cada una de ellas:
+
+#### Supervisor password
+Esta opción permite poner una contraseña para que usuarios no autorizados no puedan acceder a la configuración de la BIOS.
+La habilitamos y ponemos una contraseña segura. ¡OJO!, si la contraseña se olvida, no podrás volver a acceder a la BIOS.
+
+#### Lock UEFI BIOS settings
+Previene que los usuarios puedan hacer cambios en la BIOS, si la contraseña del supervisor está activada, esta opción no tiene sentido.
+Si no os fiais del paso anterior, esto podría proporcionar una *seguridad* falsa.
+
+#### Password at unatternded boot
+Esta configuración obliga a los usuarios a poner la contraseña despues de un apagado completo o una hibernación.
+Importantisimo activar, si el sistema entra en estado de hibernación, es porque el usuario principal no está en el
+portátil en ese momento, por lo que otra persona podría acceder sin loguearse, activandola evitamos eso.
+
+#### Password at restart
+Parecida a la anterior, pero solo cuando el sistema se reinicia.
+Podríamos activarlo para tener un poco más de seguridad.
+
+#### Set minimun lenght
+Selecciona la longitud minima de la contraseña del supervisor, power-on y disco duro.
+Lo más seguro es poner una longitud de 10 en adelante.
+
+#### Power-On password
+Evita que usuarios no autorizados puedan iniciar el sistema.
+Activar
+
+#### Hard Disk1 password
+Evita que usuarios no autorizados accedan a la información del disco duro.
+Importantisimo activar.
+
+### Anti-theft
+Al entrar en esta configuración, podremos activar el *Computrace*, con el cual podremos rastrear el dispositivo, 
+bloquearlo remotamente, borrar los datos y monitorearlo.
+
+![ANTIRROBO](antirrobo.png)
+
+Al activarlo se conecta a los servidores de *Absolute Software*, los cuales se encargan de realizar las acciones anteriores.
+Lo activamos también.
+
+### Secure boot
+En este apartado podremos configurar el arranque seguro del sistema, es decir, prevenir la ejecución de operaciones no autorizadas a la hora de inicio.
+
+![SECUREBOOT](secureboot.png)
+
+Lo activamos también.
+
+## Startup
+
+En esta pestaña podremos configurar el inicio del sistema.
